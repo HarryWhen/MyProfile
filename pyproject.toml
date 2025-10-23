@@ -1,0 +1,17 @@
+[project]
+name = "myprofile"
+version = "0.1.0"
+description = "Web resource for publishing personal profile pages"
+authors = [{name = "HarryWhen"}]
+dependencies = [
+    "fastapi==0.117.1",
+    "python-dotenv==1.1.1",
+    "fastapi-cli==0.0.13",
+]
+
+[project.scripts]
+myprofile = "app.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
