@@ -17,7 +17,7 @@ def get_current_user_profile(
     return get_user_profile(current_user)
 
 
-@router.get("/")
+@router.get("")
 def read_my_profile(
     request: Request,
     current_user_profile: UserProfile = Depends(get_current_user_profile),
