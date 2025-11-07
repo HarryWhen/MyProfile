@@ -1,4 +1,9 @@
 from . import app
+from .auth import router as auth
+from .profile import router as profile
+
+app.include_router(auth)
+app.include_router(profile)
 
 
 def run() -> None:
