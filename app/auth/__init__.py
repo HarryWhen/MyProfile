@@ -9,7 +9,7 @@ from jwt.exceptions import InvalidTokenError
 from app import app, config
 from app.userprofile import User, get_user
 
-from .security import authenticate_user
+from .password import authenticate_user
 from .token import Token, create_token, get_subject
 
 router = APIRouter()
