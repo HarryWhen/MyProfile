@@ -3,7 +3,7 @@
         <title>Login</title>
     </head>
     <body>
-        <form action="/token" method="post">
+        <form action="{{ token_url }}" method="post">
             <input type="text" name="username" required />
             <input type="text" name="password" required />
             <button type="submit">Login</button>

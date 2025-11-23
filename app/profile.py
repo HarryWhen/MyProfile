@@ -25,5 +25,5 @@ def read_my_profile(
     return templates.TemplateResponse(
         request=request,
         name="myprofile.html",
-        context=current_user_profile.dict(),
+        context=current_user_profile.model_dump(),
     )
